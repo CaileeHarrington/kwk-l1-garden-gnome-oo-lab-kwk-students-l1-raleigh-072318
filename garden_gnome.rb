@@ -14,10 +14,10 @@ class GardenGnome
   #   @hat_color = hat_color
   # end
   
-  def name=(name)
+  def name=(name) #writer/setter
     @name = name
   end
-  def name
+  def name #reader/getter
     @name
   end
   
@@ -56,10 +56,15 @@ class GardenGnome
   end
 end
 
-gnome2 = GardenGnome.new("Walter the Worst")
-# gnome
 
-# gnome1 = GardenGnome
-# gnome2 = GardenGnome.new("Walter the Worst", 
-# gnome3 = "James the Jerk"
-gnome4 = "Alfred the Abhorrent"
+gnome1 = GardenGnome.new("evil", "blue")
+gnome1.name = "Walter the Worst"
+
+gnome2 = GardenGnome.new("evil", "orange")
+gnome2.name = "James the Jerk"
+gnome2.age = "3421"
+
+gnome3 = GardenGnome.new("evil", "green")
+gnome3.name = "Alfred the Abhorrent"
+gnome3.age = "579"
+gnome3.gluten_allergy = "True"
